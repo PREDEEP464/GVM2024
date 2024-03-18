@@ -99,14 +99,14 @@
             </div>
           </div>
           <div className="pt-4 flex justify-between">
+          <Link to="/">
+              <button className="max-w-24 font-semibold rounded-md bg-blue-500 py-2 px-5 text-white hover:bg-blue-700">Login</button>
+            </Link>
             <button
               type="submit"
               className="max-w-24 font-semibold rounded-md bg-blue-500 py-2 px-4 text-white hover:bg-blue-700"
-            >Submit
+            >Create
             </button>
-            <Link to="/">
-              <button className="max-w-24 font-semibold rounded-md bg-blue-500 py-2 px-5 text-white hover:bg-blue-700">Login</button>
-            </Link>
           </div>
         </form>
       </div>
