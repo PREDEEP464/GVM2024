@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -58,7 +58,7 @@ export default function Login() {
                     <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Login</button>
                 </form>
                 <div className="mt-4 text-center">
-                    <p className="text-gray-700">Don't have an account? <a href="/signup" className="text-blue-500 font-semibold hover:text-blue-800">Sign Up</a></p>
+                    <p className="text-gray-700">Don't have an account? <Link to="/signup" className="text-blue-500 font-semibold hover:text-blue-800">Sign Up</Link></p>
                 </div>
             </div>
             <p className="absolute bottom-4 center text-gray-600 text-sm flex justify-center items-center">© GVM2024 • All rights reserved</p>
