@@ -25,7 +25,7 @@ export default function ViewDetails() {
 
   const DeletePwd = () => {
     if (showWarning) {
-      fetch(`/api/pwd/delete/${pwd_id}`, {
+      fetch(`https://pwdapi.rajvikash-r2022cse.workers.dev/pwd/delete/${pwd_id}`, {
         method: 'DELETE'
       })
       .then(response => response.json())
@@ -40,7 +40,7 @@ export default function ViewDetails() {
   };
 
   useEffect(() => {
-    fetch(`/api/pwd/get-all/${title}`)
+    fetch(`https://pwdapi.rajvikash-r2022cse.workers.dev/pwd/get-all/${title}`)
       .then((response) => response.json())
       .then((data) => {
         setPassword(data.results[0] || null);

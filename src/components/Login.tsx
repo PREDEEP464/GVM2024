@@ -16,7 +16,7 @@ export default function Login() {
             return;
         }
         try {
-            const response = await fetch('/api/user-auth', {
+            const response = await fetch('https://pwdapi.rajvikash-r2022cse.workers.dev/user-auth', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

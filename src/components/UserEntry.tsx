@@ -24,7 +24,7 @@
       e.preventDefault();
       console.log(JSON.stringify(user));
       try {
-        fetch('/api/users/new', {
+        fetch('https://pwdapi.rajvikash-r2022cse.workers.dev/users/new', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
